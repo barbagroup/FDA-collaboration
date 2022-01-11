@@ -1,4 +1,0 @@
-- [Why nuclino? to document](<Why nuclino_ to document d97e1e43.md>)
-- [FDA documents and guidance](<FDA documents and guidance 1bcb5149.md>)
-- [Outline for Presentations](<Outline for Presentations 35ad3601.md>)
-- [Journal](<Journal 74f1dd06.md>)

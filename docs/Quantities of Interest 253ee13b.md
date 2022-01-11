@@ -1,2 +1,0 @@
-- Flow Velocity at the mouthpiece or near the mouthpiece​
-- Temperature at the mouthpiece or near the mouthpiece
