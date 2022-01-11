@@ -1,6 +1,27 @@
-site_name: MkLorum
-site_url: https://example.com/
+site_name: FDA-collaboration
+site_url: https://barbagroup.github.io/FDA-collaboration/
 nav:
     - Home: index.md
+    - Main documents and infromation: 
+        - FDA documents: FDA_documents_and_guidance.md
+        - Outline: outline_for_presentations.md
+    - Decision making process:
+        - Computational model Development:
+            - Geometry: geometry.md
+            - Mesh: mesh.md
+            - Boundary Conditions: boundary_conditions.md
+            - Solver: solver.md
+            - Quantities of Inerest: quantities_of_interest.md
+            - Version control: version_controlmd
+            - Experiment: experiment.md
+        - Verification: verification.md
+        - Validation: validation.md
+        - Applicability to COU: applicability_to_COU.md
+    - Reprorts:
+        - Tools for FDA: tools_for_FDA.md
+
+
     - About: about.md
 theme: readthedocs
+docs_dir: docs
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br> Code is licensed under BSD 3-Clause.
