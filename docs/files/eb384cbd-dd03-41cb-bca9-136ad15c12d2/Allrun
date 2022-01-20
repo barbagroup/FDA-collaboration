@@ -1,0 +1,35 @@
+#!/bin/sh
+#cd ${0%/*} || exit 1                        # Run from this directory
+#. $WM_PROJECT_DIR/bin/tools/RunFunctions    # Tutorial run functions
+
+    cd Case1/system
+    m4 blockMeshDict.m4 > blockMeshDict
+    cd ..
+    blockMesh
+    
+    cd ..
+
+    cd Case2/system
+    m4 blockMeshDict.m4 > blockMeshDict
+    cd ..
+    blockMesh
+    transformPoints -translate "(0 0 0.034485)"
+
+
+
+    cd ..
+    mergeMeshes Case1 Case2 -overwrite
+    
+    cd Case3/system
+    m4 blockMeshDict.m4 > blockMeshDict
+    cd ..
+    blockMesh
+    transformPoints -translate "(0 0 0.047485)"
+
+    cd ..
+    mergeMeshes Case1 Case3 -overwrite
+    cd Case1/
+    stitchMesh outlet inlet2 -overwrite
+    stitchMesh inlet3 outlet2 -overwrite
+
+#------------------------------------------------------------------------------
