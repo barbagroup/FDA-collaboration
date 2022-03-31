@@ -23,13 +23,13 @@ numberOfSubdomains  24;
 
 simpleCoeffs
 {
-    n           (4 3 2);
+    n           (2 3 4);
     delta       0.001;
 }
 
 hierarchicalCoeffs
 {
-    n           (2 2 1);
+    n           (1 2 2);
     delta       0.001;
     order       xyz;
 }
